@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>L & L Powder Coating and Kustoms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" sizes="16x16" href="favicon_16x16.ico">
+	<link rel="icon" type="image/x-icon" sizes="32x32" href="favicon_32x32.ico">
+	<link rel="icon" type="image/x-icon" sizes="48x48" href="favicon_48x48.ico">
+	<link rel="icon" type="image/x-icon" sizes="64x64" href="favicon_64x64.ico">
+</head>
+<body>
+    <div class="container">
+		<section class="contact-info">
+			<header>
+				<h1>L & L Powder Coating and Kustoms</h1>
+			</header>
+			<p>State of the art powdercoating and abrasive blasting in Sonora, CA</p>
+			<p><strong>Address:</strong> <a href="https://www.google.com/maps/search/?api=1&query=20847%20Mechanical%20Dr,%20Sonora,%20CA%2095370" target="_blank">20847 Mechanical Dr, Sonora, CA 95370</a></p>
+			<p><strong>Phone:</strong> <a href="tel:+12095326287">(209) 532-6287</a></p>
+		</section>		
+
+		<section class="gallery">
+			<img src="gallery/271601626_4782821015086595_2900756009604106285_n.jpg" alt="A chrome intake manifold, shiny and beautiful" class="gallery-img">
+			<img src="gallery/274219641_4946275008741194_2779827900713386419_n.jpg" alt="A powdercoated white gate section" class="gallery-img">
+			<img src="gallery/274474879_4921345391234156_2032777567932221455_n.jpg" alt="A gloss black sandrail frame" class="gallery-img">
+			<img src="gallery/278352971_5055345901167437_3043223055920750695_n.jpg" alt="A beautifully powdercoated gold wheel" class="gallery-img">
+			<img src="gallery/288840925_5257561037612588_1426991505931528726_n.jpg" alt="A beautifully powdercoated matte metallic wheels" class="gallery-img">
+			<img src="gallery/294765629_5340998835935474_3943997437579769466_n.jpg" alt="A beautifully powdercoated silver wheel" class="gallery-img">
+			<img src="gallery/313022489_651355809763256_7912417063467888026_n.jpg" alt="A custom powdercoated truck hitch in multiple colors" class="gallery-img">
+			<img src="gallery/330193583_1333954820510995_4125741744436877241_n.jpg" alt="A spoked wheel from a classic car, powdercoated in gloss black" class="gallery-img">
+			<img src="gallery/359826379_852418376323664_9209707609900100663_n.jpg" alt="Beautifully powdercoated purple coil springs" class="gallery-img">
+			<img src="gallery/363850044_865234648375370_1644267910636014538_n.jpg" alt="A trailed in a powedercoating bay, finished in a beautiful red" class="gallery-img">
+			<img src="gallery/370622979_886242792941222_3373852992026176820_n.jpg" alt="An elegant section of wrought iron fence, beautifully powdercoated in black" class="gallery-img">
+		</section>		
+    </div>
+
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+	</div>
+  
+	<script>
+		var modal = document.getElementById("myModal");
+		
+		var modalImg = document.getElementById("img01");
+		Array.from(document.getElementsByClassName("gallery-img")).forEach(function(thumb) {
+			thumb.onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.style.maxWidth = this.naturalWidth + "px";
+			}
+		});
+		
+		document.getElementsByClassName("close")[0].onclick = function() {
+			modal.style.display = "none";
+		}
+		</script>		
+</body>
+</html>
